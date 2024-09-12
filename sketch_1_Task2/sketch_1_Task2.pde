@@ -13,7 +13,7 @@ boolean happy = false;
 println("Hi, my name is " + name);
 println("I am " + age + " years old");
 
-if (happy == true){
-println("I clap my hands");}
-else{
-println("I don't clap my hands");}
+print("I");
+if (happy == false){
+print(" don't ");}
+print("clap my hands");
