@@ -8,7 +8,9 @@ color lightOff = 1;
 
 int red = 0;
 int yellow = 1;
-int green = 2; 
+int green = 2;
+int w = 100;
+int h = 100;
 
 
 //6.c
@@ -24,25 +26,25 @@ void draw(){
   println(frameCount);
   ellipseMode (CENTER);
 switch(frameCount%300){
- case 0:
+ case 100:
  fill(r);
- ellipse(width/2,height/4,100,100);
+ ellipse(width/2,height/4,w,h);
  fill(lightOff);
- ellipse(width/2,height/2,100,100);
- ellipse(width/2,(height/4)*3,100,100);
+ ellipse(width/2,height/2,w,h);
+ ellipse(width/2,(height/4)*3,w,h);
  break;
- case 1:
+ case 200:
  fill(y);
- ellipse(width/2,height/2,100,100);
+ ellipse(width/2,height/2,w,h);
  fill(lightOff);
- ellipse(width/2,height/4,100,100);
- ellipse(width/2,(height/4)*3,100,100);
+ ellipse(width/2,height/4,w,h);
+ ellipse(width/2,(height/4)*3,w,h);
  break;
- case 2:
+ case 0:
  fill(g);
- ellipse(width/2,(height/4)*3,100,100);
+ ellipse(width/2,(height/4)*3,w,h);
  fill(lightOff);
- ellipse(width/2,height/2,100,100);
- ellipse(width/2,height/4,100,100);
+ ellipse(width/2,height/2,w,h);
+ ellipse(width/2,height/4,w,h);
  break; 
 }}

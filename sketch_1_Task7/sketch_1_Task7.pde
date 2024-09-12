@@ -17,3 +17,10 @@ while (input >= 0){
   input--;}
   
 // ved negativ værdi bliver man nødt til at ændre i fortegnene
+input = -20;
+half = input/2;
+while (input <= 0){
+  if (input == half ) {println ("HALF!");}
+  else if (input == -6) {println("minus six");}
+  else {println(input);}
+  input++;}
